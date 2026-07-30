@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+.Rproj.user/
+raw_data/*
+!raw_data/.gitkeep
+tmp/
+
