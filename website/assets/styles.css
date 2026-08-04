@@ -62,3 +62,58 @@ nav a{font-size:.75rem;white-space:nowrap}
   nav a{padding:.78rem 0;border-top:1px solid var(--line);font-size:.83rem}
   .nav-cta{margin-top:.5rem;padding:.78rem;text-align:center;border:0}
 }
+
+/* Client-centered PlanKind palette and layouts */
+:root{
+  --navy:#263b2b;
+  --deep:#18271d;
+  --cream:#eee4d2;
+  --white:#faf5ea;
+  --coral:#d1a52d;
+  --sage:#a8ad87;
+  --mist:#dfd2bb;
+  --ink:#2e3025;
+  --muted:#6e685b;
+  --walnut:#4b3025;
+  --line:rgba(75,48,37,.2);
+}
+body{background:var(--cream)}
+.header{background:rgba(238,228,210,.96);border-color:var(--line)}
+.header-dark{background:var(--deep)}
+.logo span{color:var(--walnut)}
+.logo.inverse span,.header-dark .logo span{color:var(--white)}
+.nav-cta,.button.coral{background:var(--coral);border-color:var(--coral);color:#241d12}
+.button.ghost{border-color:var(--walnut);color:var(--walnut)}
+.client-hero{background:linear-gradient(135deg,var(--cream) 0%,#f4ecde 60%,#dbcbaa 100%)}
+.question-card{background:var(--walnut);color:var(--white);padding:clamp(2rem,4vw,4rem);box-shadow:20px 20px 0 rgba(209,165,45,.5)}
+.question-card>span,.person-copy .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.67rem;color:#e6c760;font-weight:700}
+.question-card h2{font-size:clamp(2rem,3.4vw,3.8rem);line-height:1;letter-spacing:-.035em;margin:1rem 0 1.3rem}
+.question-card p{color:#e7ddcf}
+.question-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem}
+.question-tags b{font-size:.7rem;padding:.5rem .7rem;border:1px solid rgba(255,255,255,.28);font-weight:600}
+.proof-strip,.services-preview,.question-section{background:var(--navy)}
+.data-feature,.approach-hero,.team-hero{background:var(--mist)}
+.mini-dashboard{background:var(--white);box-shadow:16px 16px 0 rgba(75,48,37,.32)}
+.footer{background:var(--deep)}
+.team-section{padding:clamp(4rem,7vw,7rem) clamp(1.25rem,7vw,7rem);display:grid;gap:clamp(5rem,9vw,9rem)}
+.person-card{display:grid;grid-template-columns:minmax(260px,.7fr) 1.3fr;gap:clamp(2rem,6vw,7rem);align-items:center}
+.person-card.reverse{grid-template-columns:1.3fr minmax(260px,.7fr)}
+.person-card.reverse .person-photo{order:2}.person-card.reverse .person-copy{order:1}
+.person-photo{position:relative;background:var(--walnut);padding:1rem}
+.person-photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover}
+.person-photo span{position:absolute;left:1.7rem;bottom:1.7rem;background:var(--cream);color:var(--walnut);padding:.45rem .65rem;font-size:.65rem;text-transform:uppercase;letter-spacing:.1em}
+.person-copy h2{font-size:clamp(3rem,5vw,5.5rem);line-height:.95;letter-spacing:-.05em;margin:1rem 0 1.5rem}
+.person-copy>p{font-size:1.08rem;max-width:720px}.person-copy h3{margin-top:2.2rem;color:var(--walnut)}
+.specialty-list{display:flex;flex-wrap:wrap;gap:.55rem;margin:1rem 0 2rem}.specialty-list span{padding:.55rem .8rem;border:1px solid var(--line);background:rgba(250,245,234,.45);font-size:.78rem}
+.team-fit{background:#f5eddf}
+.collaboration-steps{padding:0 clamp(1.25rem,7vw,7rem) clamp(5rem,8vw,8rem)}
+.collaboration-steps article{display:grid;grid-template-columns:90px 1fr;gap:2rem;padding:2rem 0;border-top:1px solid var(--line)}
+.collaboration-steps article>span{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--coral)}
+.collaboration-steps h2{font-size:clamp(1.8rem,3vw,3.2rem);margin:0 0 .5rem;color:var(--walnut)}
+.collaboration-steps p{max-width:760px;color:var(--muted);margin:0}
+.research-levels{background:var(--sage);padding:clamp(5rem,8vw,8rem) clamp(1.25rem,7vw,7rem)}
+.level-grid{display:grid;grid-template-columns:repeat(5,1fr);margin-top:3rem;border-top:1px solid rgba(75,48,37,.25);border-left:1px solid rgba(75,48,37,.25)}
+.level-grid article{padding:1.5rem;min-height:280px;border-right:1px solid rgba(75,48,37,.25);border-bottom:1px solid rgba(75,48,37,.25)}
+.level-grid b{font-size:.65rem;color:var(--walnut)}.level-grid h3{font-size:1.3rem;line-height:1.1;margin:3rem 0 1rem}.level-grid p{font-size:.83rem;color:#4e5140}
+@media(max-width:900px){.person-card,.person-card.reverse{grid-template-columns:1fr}.person-card.reverse .person-photo,.person-card.reverse .person-copy{order:initial}.person-photo{max-width:520px}.level-grid{grid-template-columns:1fr 1fr}.question-card{margin-bottom:2rem}}
+@media(max-width:560px){.level-grid{grid-template-columns:1fr}.level-grid article{min-height:auto}.collaboration-steps article{grid-template-columns:50px 1fr;gap:1rem}.person-photo span{display:none}}
