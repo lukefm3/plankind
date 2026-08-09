@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-08-08T20:54:46Z",
+  "generated_at_utc": "2026-08-09T20:58:02Z",
   "source_name": "FEMA OpenFEMA - Disaster Declarations Summaries",
   "source_url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$orderby=declarationDate%20desc&$top=5000",
-  "record_count": 4235,
-  "coverage_start": "2024-08-08",
+  "record_count": 4221,
+  "coverage_start": "2024-08-09",
   "coverage_end": "2026-08-04"
 }
