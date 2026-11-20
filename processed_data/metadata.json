@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-19T02:02:44Z",
+  "generated_at_utc": "2026-11-20T01:49:00Z",
   "source_name": "FEMA OpenFEMA - Disaster Declarations Summaries",
   "source_url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$orderby=declarationDate%20desc&$top=5000",
   "record_count": 3330,
